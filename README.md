@@ -19,7 +19,7 @@ Use this API to create and manage a list of Cooldowns, and you can use them for 
         CooldownAPI.getCooldown("example);
     }
 ```
-* Agora aqui você poderá ver alguns usos da API:
+* Now here you can see some uses of the API:
 ```Java
     @Override
     public void onEnable() {
@@ -30,7 +30,11 @@ Use this API to create and manage a list of Cooldowns, and you can use them for 
         // Firts: user - Second: Current time - Third: Cooldown in Long (Miliseconds)
         cooldownList.addCooldown("exampleUser", System.currentTimeMillis(), 1000L)
 
-        // Return false: 
-        cooldownList.checkCooldown("exampleUser") 
+        // Return false: The user is not on the list or the cooldown has passed.
+        // Return true: The person is still within the set cooldown and must wait to exit it.
+        cooldownList.checkCooldown("exampleUser")
+
+        // Remove user from Cooldown List
+        cooldownList.removeCooldown("exampleUser") 
     }
 ```
