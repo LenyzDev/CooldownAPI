@@ -16,7 +16,7 @@ Use this API to create and manage a list of Cooldowns, and you can use them for 
     public void onEnable() {
         CooldownAPI.createCooldown("example");
 
-        CooldownAPI.getCooldown("example);
+        CooldownAPI.getCooldown("example");
     }
 ```
 * Now here you can see some uses of the API:
