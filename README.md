@@ -27,7 +27,7 @@ Use this API to create and manage a list of Cooldowns, and you can use them for 
 
         CooldownObject cooldownList = CooldownAPI.getCooldown("example");
 
-        // Firts: user - Second: Current time - Third: Cooldown in Long (Miliseconds)
+        // First: user - Second: Current time - Third: Cooldown in Long (Miliseconds)
         cooldownList.addCooldown("exampleUser", System.currentTimeMillis(), 1000L)
 
         // Return false: The user is not on the list or the cooldown has passed.
